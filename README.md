@@ -175,6 +175,16 @@ Portfolio/
 | **Footer** | Back-to-top button and copyright |
 
 ---
+## Project Screenshots
+
+### Homepage
+![Homepage Screenshot](screenshots/Screenshot%202026-04-23%20114707.png)
+
+### Portfolio Section
+![Portfolio Screenshot](screenshots/Screenshot%202026-04-23%20114823.png)
+
+### Contact Page
+![Contact Screenshot](screenshots/Screenshot%202026-04-23%20114931.png)
 
 ## 📄 License
 
