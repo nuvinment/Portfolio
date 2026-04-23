@@ -183,8 +183,9 @@ Portfolio/
 ### Portfolio Section
 ![Portfolio Screenshot](screenshots/Screenshot%202026-04-23%20114823.png)
 
-### Contact Page
-![Contact Screenshot](screenshots/Screenshot%2026-04-23%115105.png)
+## Contact Section
+![Contact Screenshot](screenshots/Screenshot%202026-04-23%20115105.png)
+
 
 ## 📄 License
 
