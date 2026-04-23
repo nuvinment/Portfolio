@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nuvin Amarasinghe — Developer & Japanese Language Student</title>
+  <meta name="description" content="Portfolio of Nuvin Amarasinghe — IT undergraduate, Japanese language student, and aspiring full-stack developer at Lanka Nippon BizTech Institute." />
+
+  <!-- Bootstrap 5.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="80">
+
+  <!-- ========== NAVBAR ========== -->
+  <nav id="mainNav" class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <span class="brand-accent">N</span>uvin<span class="brand-dot">.</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navLinks" aria-controls="navLinks" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navLinks">
+        <ul class="navbar-nav ms-auto align-items-center">
+          <li class="nav-item"><a class="nav-link" href="#hero" data-i18n="nav.home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about" data-i18n="nav.about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills" data-i18n="nav.skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects" data-i18n="nav.projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education" data-i18n="nav.education">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact" data-i18n="nav.contact">Contact</a></li>
+          <li class="nav-item ms-lg-3">
+            <button id="langToggle" class="lang-toggle-btn" title="Switch Language">
+              <span class="lang-flag">🇯🇵</span>
+              <span class="lang-label" data-i18n="nav.lang">日本語</span>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section id="hero" class="hero-section d-flex align-items-center">
+    <div class="hero-bg-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+    <div class="container position-relative">
+      <div class="row align-items-center">
+        <div class="col-lg-7">
+          <p class="hero-greeting reveal" data-i18n="hero.greeting">こんにちは！ Hello, I'm</p>
+          <h1 class="hero-name reveal">Nuvin<br /><span class="text-gradient">Amarasinghe</span></h1>
+          <p class="hero-tagline reveal">
+            <span id="typed-text"></span><span class="typed-cursor">|</span>
+          </p>
+          <div class="hero-cta reveal">
+            <a href="#projects" class="btn btn-glow me-3" data-i18n="hero.cta1">View My Work</a>
+            <a href="#contact" class="btn btn-outline-light btn-ghost" data-i18n="hero.cta2">Get in Touch</a>
+          </div>
+        </div>
+        <div class="col-lg-5 d-none d-lg-block text-center">
+          <div class="hero-image-wrapper reveal">
+            <img src="profile.png" alt="Nuvin Amarasinghe" class="hero-image" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section id="about" class="section-padding">
+    <div class="container">
+      <div class="section-header text-center reveal">
+        <p class="section-subtitle" data-i18n="about.subtitle">Get to know me</p>
+        <h2 class="section-title" data-i18n="about.title" data-i18n-html="true">About <span class="text-gradient">Me</span></h2>
+        <div class="title-underline"></div>
+      </div>
+      <div class="row align-items-center mt-5">
+        <div class="col-lg-5 text-center mb-4 mb-lg-0 reveal">
+          <div class="about-image-wrapper">
+            <img src="profile.png" alt="About Nuvin" class="about-image" />
+          </div>
+        </div>
+        <div class="col-lg-7 reveal">
+          <div class="glass-card about-content">
+            <h3 data-i18n="about.heading">IT Undergraduate &amp; Japanese Language Student</h3>
+            <p data-i18n="about.p1" data-i18n-html="true">
+              I'm a 2nd year undergraduate at <strong>Lanka Nippon BizTech Institute</strong>, pursuing a dual focus
+              in <em>Information Technology</em> and <em>Japanese Language</em>. I'm passionate about building
+              real-world applications that solve meaningful problems and bridge the gap between technology
+              and language.
+            </p>
+            <p data-i18n="about.p2">
+              With hands-on experience in Python, Java, and modern web technologies, I strive to write clean,
+              efficient code while continuously expanding my skill set. My unique combination of IT expertise and
+              Japanese fluency positions me at the intersection of Sri Lankan and Japanese tech industries.
+            </p>
+            <div class="about-stats">
+              <div class="stat-item">
+                <span class="stat-number">3+</span>
+                <span class="stat-label" data-i18n="about.stat1">Projects Built</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">2nd</span>
+                <span class="stat-label" data-i18n="about.stat2">Year Undergrad</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">2</span>
+                <span class="stat-label" data-i18n="about.stat3">Languages</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SKILLS ========== -->
+  <section id="skills" class="section-padding section-dark">
+    <div class="container">
+      <div class="section-header text-center reveal">
+        <p class="section-subtitle" data-i18n="skills.subtitle">What I work with</p>
+        <h2 class="section-title" data-i18n="skills.title" data-i18n-html="true">My <span class="text-gradient">Skills</span></h2>
+        <div class="title-underline"></div>
+      </div>
+      <div class="row g-4 mt-4">
+        <!-- Python -->
+        <div class="col-6 col-md-4 col-lg-3 reveal">
+          <div class="skill-card glass-card text-center">
+            <div class="skill-icon"><i class="bi bi-filetype-py"></i></div>
+            <h5>Python</h5>
+            <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+          </div>
+        </div>
+        <!-- Java -->
+        <div class="col-6 col-md-4 col-lg-3 reveal">
+          <div class="skill-card glass-card text-center">
+            <div class="skill-icon"><i class="bi bi-filetype-java"></i></div>
+            <h5>Java</h5>
+            <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+          </div>
+        </div>
+        <!-- HTML -->
+        <div class="col-6 col-md-4 col-lg-3 reveal">
+          <div class="skill-card glass-card text-center">
+            <div class="skill-icon"><i class="bi bi-filetype-html"></i></div>
+            <h5>HTML</h5>
+            <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+          </div>
+        </div>
+        <!-- CSS -->
+        <div class="col-6 col-md-4 col-lg-3 reveal">
+          <div class="skill-card glass-card text-center">
+            <div class="skill-icon"><i class="bi bi-filetype-css"></i></div>
+            <h5>CSS</h5>
+            <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+          </div>
+        </div>
+        <!-- JavaScript -->
+        <div class="col-6 col-md-4 col-lg-3 reveal">
+          <div class="skill-card glass-card text-center">
+            <div class="skill-icon"><i class="bi bi-filetype-js"></i></div>
+            <h5>JavaScript</h5>
+            <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+          </div>
+        </div>
+        <!-- Japanese -->
+        <div class="col-6 col-md-4 col-lg-3 reveal">
+          <div class="skill-card glass-card text-center">
+            <div class="skill-icon"><i class="bi bi-translate"></i></div>
+            <h5 data-i18n="skills.japanese">Japanese</h5>
+            <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+          </div>
+        </div>
+        <!-- Database -->
+        <div class="col-6 col-md-4 col-lg-3 reveal">
+          <div class="skill-card glass-card text-center">
+            <div class="skill-icon"><i class="bi bi-database"></i></div>
+            <h5 data-i18n="skills.databases">Databases</h5>
+            <div class="skill-bar"><div class="skill-fill" data-width="65"></div></div>
+          </div>
+        </div>
+        <!-- Git -->
+        <div class="col-6 col-md-4 col-lg-3 reveal">
+          <div class="skill-card glass-card text-center">
+            <div class="skill-icon"><i class="bi bi-git"></i></div>
+            <h5>Git</h5>
+            <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROJECTS ========== -->
+  <section id="projects" class="section-padding">
+    <div class="container">
+      <div class="section-header text-center reveal">
+        <p class="section-subtitle" data-i18n="projects.subtitle">Things I've built</p>
+        <h2 class="section-title" data-i18n="projects.title" data-i18n-html="true">My <span class="text-gradient">Projects</span></h2>
+        <div class="title-underline"></div>
+      </div>
+
+      <!-- Filter Buttons -->
+      <div class="project-filters text-center mt-4 reveal">
+        <button class="filter-btn active" data-filter="all" data-i18n="projects.filterAll">All</button>
+        <button class="filter-btn" data-filter="python">Python</button>
+        <button class="filter-btn" data-filter="java">Java</button>
+        <button class="filter-btn" data-filter="web" data-i18n="projects.filterWeb">Web</button>
+      </div>
+
+      <div class="row g-4 mt-3" id="projects-grid">
+        <!-- Project 1: Car Rental System -->
+        <div class="col-md-6 col-lg-4 project-item reveal" data-category="python">
+          <div class="project-card glass-card">
+            <div class="project-card-header">
+              <div class="project-icon-wrapper python-bg">
+                <i class="bi bi-car-front-fill"></i>
+              </div>
+              <div class="project-links">
+                <a href="#" title="Source Code"><i class="bi bi-github"></i></a>
+              </div>
+            </div>
+            <h4 class="project-title" data-i18n="projects.car.title">Car Rental System</h4>
+            <p class="project-desc" data-i18n="projects.car.desc">A comprehensive car rental management system built with Python. Features include vehicle inventory management, booking and reservation handling, customer records, and rental history tracking.</p>
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">OOP</span>
+              <span class="tag" data-i18n="projects.tag.desktop">Desktop App</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: Airline Reservation System -->
+        <div class="col-md-6 col-lg-4 project-item reveal" data-category="java">
+          <div class="project-card glass-card">
+            <div class="project-card-header">
+              <div class="project-icon-wrapper java-bg">
+                <i class="bi bi-airplane-fill"></i>
+              </div>
+              <div class="project-links">
+                <a href="#" title="Source Code"><i class="bi bi-github"></i></a>
+              </div>
+            </div>
+            <h4 class="project-title" data-i18n="projects.airline.title">Airline Reservation System</h4>
+            <p class="project-desc" data-i18n="projects.airline.desc">An airline reservation platform developed in Java. Supports flight search, seat selection, passenger management, booking confirmations, and ticket generation with a clean UI.</p>
+            <div class="project-tags">
+              <span class="tag">Java</span>
+              <span class="tag">OOP</span>
+              <span class="tag" data-i18n="projects.tag.desktop">Desktop App</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: Gido -->
+        <div class="col-md-6 col-lg-4 project-item reveal" data-category="web">
+          <div class="project-card glass-card">
+            <div class="project-card-header">
+              <div class="project-icon-wrapper web-bg">
+                <i class="bi bi-globe2"></i>
+              </div>
+              <div class="project-links">
+                <a href="#" title="Source Code"><i class="bi bi-github"></i></a>
+                <a href="#" title="Live Site"><i class="bi bi-box-arrow-up-right"></i></a>
+              </div>
+            </div>
+            <h4 class="project-title">Gido — ビジネス日本語</h4>
+            <p class="project-desc" data-i18n="projects.gido.desc">A web application designed to help learners improve their Business Japanese skills. Features interactive lessons, vocabulary drills, conversation practice, and progress tracking for professional fluency.</p>
+            <div class="project-tags">
+              <span class="tag">HTML/CSS</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag" data-i18n="projects.tag.webapp">Web App</span>
+              <span class="tag" data-i18n="projects.tag.japanese">Japanese</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EDUCATION / TIMELINE ========== -->
+  <section id="education" class="section-padding section-dark">
+    <div class="container">
+      <div class="section-header text-center reveal">
+        <p class="section-subtitle" data-i18n="edu.subtitle">My learning journey</p>
+        <h2 class="section-title" data-i18n="edu.title" data-i18n-html="true">Education &amp; <span class="text-gradient">Experience</span></h2>
+        <div class="title-underline"></div>
+      </div>
+      <div class="timeline mt-5">
+        <!-- Item 1 -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card">
+            <span class="timeline-date" data-i18n="edu.date1">2024 — Present</span>
+            <h4 data-i18n="edu.heading1">BSc in Information Technology</h4>
+            <p class="timeline-place"><i class="bi bi-mortarboard-fill me-2"></i>Lanka Nippon BizTech Institute</p>
+            <p data-i18n="edu.desc1">Currently in 2nd year, studying Information Technology alongside the Japanese language. Developing strong foundations in programming, databases, networking, and software engineering.</p>
+          </div>
+        </div>
+        <!-- Item 2 -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card">
+            <span class="timeline-date" data-i18n="edu.date2">2024 — Present</span>
+            <h4 data-i18n="edu.heading2">Japanese Language Studies</h4>
+            <p class="timeline-place"><i class="bi bi-book-fill me-2"></i>Lanka Nippon BizTech Institute</p>
+            <p data-i18n="edu.desc2">Studying Japanese language with a focus on both conversational and business proficiency. Combining language skills with IT knowledge for cross-cultural tech opportunities.</p>
+          </div>
+        </div>
+        <!-- Item 3 -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card">
+            <span class="timeline-date">2023 — 2024</span>
+            <h4 data-i18n="edu.heading3">Self-Learning &amp; Projects</h4>
+            <p class="timeline-place"><i class="bi bi-code-slash me-2"></i><span data-i18n="edu.place3">Independent Study</span></p>
+            <p data-i18n="edu.desc3">Built foundational programming skills through self-directed learning and personal projects in Python, Java, and web development.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section id="contact" class="section-padding">
+    <div class="container">
+      <div class="section-header text-center reveal">
+        <p class="section-subtitle" data-i18n="contact.subtitle">Let's connect</p>
+        <h2 class="section-title" data-i18n="contact.title" data-i18n-html="true">Get in <span class="text-gradient">Touch</span></h2>
+        <div class="title-underline"></div>
+      </div>
+      <div class="row g-4 mt-4 justify-content-center">
+        <div class="col-lg-5 reveal">
+          <div class="glass-card contact-info-card">
+            <h4 data-i18n="contact.infoTitle">Contact Info</h4>
+            <div class="contact-detail">
+              <div class="contact-icon"><i class="bi bi-geo-alt-fill"></i></div>
+              <div>
+                <strong data-i18n="contact.location">Location</strong>
+                <p data-i18n="contact.locationVal">Sri Lanka</p>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <div class="contact-icon"><i class="bi bi-envelope-fill"></i></div>
+              <div>
+                <strong data-i18n="contact.email">Email</strong>
+                <p>nuvin@example.com</p>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <div class="contact-icon"><i class="bi bi-mortarboard-fill"></i></div>
+              <div>
+                <strong data-i18n="contact.university">University</strong>
+                <p>Lanka Nippon BizTech Institute</p>
+              </div>
+            </div>
+            <div class="social-links mt-4">
+              <a href="#" class="social-link" title="GitHub"><i class="bi bi-github"></i></a>
+              <a href="#" class="social-link" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+              <a href="#" class="social-link" title="Twitter"><i class="bi bi-twitter-x"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 reveal">
+          <form class="glass-card contact-form" id="contactForm">
+            <div class="mb-3">
+              <label for="contactName" class="form-label" data-i18n="contact.form.name">Your Name</label>
+              <input type="text" class="form-control custom-input" id="contactName" data-i18n-placeholder="contact.form.namePh" placeholder="John Doe" required />
+            </div>
+            <div class="mb-3">
+              <label for="contactEmail" class="form-label" data-i18n="contact.form.email">Your Email</label>
+              <input type="email" class="form-control custom-input" id="contactEmail" data-i18n-placeholder="contact.form.emailPh" placeholder="john@example.com" required />
+            </div>
+            <div class="mb-3">
+              <label for="contactSubject" class="form-label" data-i18n="contact.form.subject">Subject</label>
+              <input type="text" class="form-control custom-input" id="contactSubject" data-i18n-placeholder="contact.form.subjectPh" placeholder="Project Inquiry" />
+            </div>
+            <div class="mb-3">
+              <label for="contactMessage" class="form-label" data-i18n="contact.form.message">Message</label>
+              <textarea class="form-control custom-input" id="contactMessage" rows="5" data-i18n-placeholder="contact.form.messagePh" placeholder="Tell me about your idea..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-glow w-100" data-i18n="contact.form.send" data-i18n-html="true">
+              <i class="bi bi-send-fill me-2"></i>Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer-section">
+    <div class="container text-center">
+      <a href="#hero" class="back-to-top" title="Back to Top">
+        <i class="bi bi-arrow-up-short"></i>
+      </a>
+      <p class="footer-brand">Nuvin<span class="text-gradient">.</span></p>
+      <p class="footer-text" data-i18n="footer.text" data-i18n-html="true">&copy; 2026 Nuvin Amarasinghe. Crafted with <i class="bi bi-heart-fill text-gradient"></i> in Sri Lanka.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
